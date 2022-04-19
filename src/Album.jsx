@@ -11,6 +11,7 @@ class Album extends React.Component {
     this.state = {
       album: [],
       respondido: false,
+      favoritePickUp: false,
       artist: '',
       collection: '',
       favorites: [],
@@ -18,18 +19,20 @@ class Album extends React.Component {
   }
 
   componentDidMount() {
-    this.getFavorites();
     this.getMusic();
+    this.getFavorites();
   }
 
   getFavorites = async () => {
+    this.setState({ favoritePickUp: true });
     const favorites = await getFavoriteSongs();
     this.setState({
       favorites,
-    });
+    }, () => this.setState({ favoritePickUp: false }));
   }
 
   getMusic = async () => {
+    this.setState({ favoritePickUp: true });
     const { match: { params: { id } } } = this.props;
     const alb = await getMusics(id);
     const desc = alb[0];
@@ -45,12 +48,17 @@ class Album extends React.Component {
   }
 
   render() {
-    const { album, respondido, artist, collection, favorites } = this.state;
-    console.log(favorites);
+    const {
+      album,
+      respondido,
+      artist,
+      collection,
+      favorites,
+      favoritePickUp } = this.state;
     return (
       <div data-testid="page-album">
         <Header />
-        {(respondido && favorites.length > 0)
+        {(respondido && !favoritePickUp)
             && (
               <div>
                 <h1 data-testid="artist-name">{ artist }</h1>
