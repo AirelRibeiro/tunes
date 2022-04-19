@@ -12,6 +12,18 @@ class MusicCard extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const { favorite } = this.props;
+    this.auxiliarDeAtualizacao(favorite);
+  }
+
+  auxiliarDeAtualizacao = (valor) => {
+    console.log(valor);
+    this.setState({
+      check: valor,
+    });
+  }
+
   handleChange = ({ target }, msc) => {
     const { checked } = target;
     this.setState({
@@ -62,6 +74,7 @@ MusicCard.propTypes = {
   musicName: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
   song: PropTypes.objectOf(PropTypes.any).isRequired,
+  favorite: PropTypes.bool.isRequired,
 };
 
 export default MusicCard;
