@@ -38,8 +38,10 @@ class MusicCard extends React.Component {
       await addSong(music);
       this.setState({ carregando: false });
     } else {
+      const { teste } = this.props;
       await removeSong(music);
       this.setState({ carregando: false });
+      teste();
     }
   }
 
@@ -56,10 +58,10 @@ class MusicCard extends React.Component {
           <code>audio</code>
           .
         </audio>
-        <label htmlFor="favorite">
+        <label htmlFor={ id }>
           Favorita
           <input
-            name="favorite"
+            id={ id }
             type="checkbox"
             data-testid={ `checkbox-music-${id}` }
             checked={ check }
@@ -78,6 +80,11 @@ MusicCard.propTypes = {
   id: PropTypes.number.isRequired,
   song: PropTypes.objectOf(PropTypes.any).isRequired,
   favorite: PropTypes.bool.isRequired,
+  teste: PropTypes.func,
+};
+
+MusicCard.defaultProps = {
+  teste: console.log('Testou'),
 };
 
 export default MusicCard;
