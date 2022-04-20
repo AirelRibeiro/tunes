@@ -42,9 +42,9 @@ class Profile extends React.Component {
                 />
                 <h3>{user.email}</h3>
                 <h4>{user.description}</h4>
-                <Link to="/profile/edit">Editar perfil</Link>
               </>
             )}
+          <Link to="/profile/edit">Editar perfil</Link>
         </div>
       </div>
     );
