@@ -38,9 +38,9 @@ class MusicCard extends React.Component {
       await addSong(music);
       this.setState({ carregando: false });
     } else {
-      const { teste } = this.props;
       await removeSong(music);
       this.setState({ carregando: false });
+      const { teste } = this.props;
       teste();
     }
   }

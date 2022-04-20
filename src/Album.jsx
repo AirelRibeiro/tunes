@@ -72,6 +72,7 @@ class Album extends React.Component {
                       id={ song.trackId }
                       song={ song }
                       favorite={ favorites.some((fv) => fv.trackId === song.trackId) }
+                      teste={ () => console.log('Será?') }
                     />))}
               </div>
             )}
