@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Carregando from './Carregando';
 import { getUser, updateUser } from './services/userAPI';
 import UserForm from './UserForm';
+import './Profile.css';
 
 class ProfileEdit extends React.Component {
   constructor() {
@@ -91,15 +92,41 @@ class ProfileEdit extends React.Component {
         {carregando
           ? <Carregando />
           : (
-            <UserForm
-              name={ name }
-              email={ email }
-              description={ description }
-              image={ image }
-              changeFunction={ this.handleChange }
-              saveFunction={ this.saveUser }
-              but={ button }
-            />)}
+            <>
+              <UserForm
+                name={ name }
+                email={ email }
+                description={ description }
+                image={ image }
+                changeFunction={ this.handleChange }
+                saveFunction={ this.saveUser }
+                but={ button }
+              />
+              <h3>Visualização Prévia:</h3>
+              <div className="profile">
+                <div className="name-img">
+                  <h1>{ name }</h1>
+                  <img
+                    src={ image }
+                    alt={ name }
+                  />
+                </div>
+                <div className="perso-information">
+                  <h3>
+                    Email:
+                    {' '}
+                    {email}
+                  </h3>
+                  <h4>
+                    Descrição:
+                    {' '}
+                    {description}
+                  </h4>
+                </div>
+              </div>
+
+            </>
+          )}
         { respondido && <Redirect to="/profile" /> }
       </div>
     );

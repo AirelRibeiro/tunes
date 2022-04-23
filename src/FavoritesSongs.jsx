@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import MusicCard from './components/MusicCard';
+import './Favorites.css';
 
 class FavoritesSongs extends React.Component {
   render() {
     const { favorites, func } = this.props;
     return (
-      <div>
+      <div className="songs">
         {favorites
           .map((song) => (
             <MusicCard

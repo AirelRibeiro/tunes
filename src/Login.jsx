@@ -2,6 +2,7 @@ import React from 'react';
 import { Redirect } from 'react-router-dom';
 import { createUser } from './services/userAPI';
 import Carregando from './Carregando';
+import './Login.css';
 
 class Login extends React.Component {
   constructor() {
@@ -35,7 +36,7 @@ class Login extends React.Component {
     const { name, carregando, respondido } = this.state;
     const tres = 3;
     return (
-      <div data-testid="page-login">
+      <div data-testid="page-login" className="login">
         <input
           data-testid="login-name-input"
           value={ name }

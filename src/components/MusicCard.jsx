@@ -49,25 +49,27 @@ class MusicCard extends React.Component {
     const { music, musicName, id, song } = this.props;
     const { check, carregando } = this.state;
     return (
-      <div>
+      <div className="song">
         <p>{ musicName }</p>
-        <audio data-testid="audio-component" src={ music } controls>
-          <track kind="captions" />
-          O seu navegador não suporta o elemento
-          {' '}
-          <code>audio</code>
-          .
-        </audio>
-        <label htmlFor={ id }>
-          Favorita
-          <input
-            id={ id }
-            type="checkbox"
-            data-testid={ `checkbox-music-${id}` }
-            checked={ check }
-            onChange={ (event) => this.handleChange(event, song) }
-          />
-        </label>
+        <div>
+          <audio data-testid="audio-component" src={ music } controls>
+            <track kind="captions" />
+            O seu navegador não suporta o elemento
+            {' '}
+            <code>audio</code>
+            .
+          </audio>
+          <label htmlFor={ id }>
+            Favorita
+            <input
+              id={ id }
+              type="checkbox"
+              data-testid={ `checkbox-music-${id}` }
+              checked={ check }
+              onChange={ (event) => this.handleChange(event, song) }
+            />
+          </label>
+        </div>
         {carregando && <Carregando />}
       </div>
     );

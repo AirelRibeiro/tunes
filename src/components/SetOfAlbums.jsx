@@ -13,15 +13,17 @@ class SetOfAlbums extends React.Component {
             {' '}
             {artist}
           </h1>
-          {array
-            .map(({ collectionId, collectionName, artworkUrl100 }) => (
-              <SingleAlbum
-                key={ collectionId }
-                id={ collectionId }
-                album={ collectionName }
-                image={ artworkUrl100 }
-              />
-            ))}
+          <div className="set-of-albums">
+            {array
+              .map(({ collectionId, collectionName, artworkUrl100 }) => (
+                <SingleAlbum
+                  key={ collectionId }
+                  id={ collectionId }
+                  album={ collectionName }
+                  image={ artworkUrl100 }
+                />
+              ))}
+          </div>
         </section>
       )
     );

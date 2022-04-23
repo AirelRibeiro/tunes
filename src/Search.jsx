@@ -3,6 +3,7 @@ import Header from './components/Header';
 import searchAlbumsAPI from './services/searchAlbumsAPI';
 import Carregando from './Carregando';
 import SetOfAlbums from './components/SetOfAlbums';
+import './Search.css';
 
 class Search extends React.Component {
   constructor() {
@@ -38,7 +39,7 @@ class Search extends React.Component {
   render() {
     const { input, artistName, carregando, artist } = this.state;
     return (
-      <div data-testid="page-search">
+      <div data-testid="page-search" className="search">
         <Header />
         <input
           data-testid="search-artist-input"

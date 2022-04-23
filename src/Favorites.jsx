@@ -35,13 +35,15 @@ class Favorites extends React.Component {
       <div data-testid="page-favorites">
         <Header />
         {carregando && <Carregando />}
-        {favoritePickUp
+        <div>
+          {favoritePickUp
             && (
               <FavoritesSongs
                 favorites={ favorites }
                 func={ () => this.getFavorites() }
               />
             )}
+        </div>
       </div>
     );
   }

@@ -1,0 +1,43 @@
+.profile {
+  border: black solid 1px;
+  display: flex;
+  margin: 10px auto 30px;
+  width: 80%;
+}
+
+.name-img {
+  border: black solid 1px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  width: 50%;
+}
+
+.name-img h1 {
+  display: none;
+}
+
+.name-img img {
+  max-width: 100%;
+}
+
+.perso-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  width: 40%;
+}
+
+.perso-information h3 {
+  text-align: center;
+}
+
+.perso-information h4 {
+  text-align: justify;
+}
+
+.edit-link {
+  align-self: flex-start;
+  font-size: x-large;
+}

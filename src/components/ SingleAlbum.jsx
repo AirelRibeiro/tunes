@@ -12,6 +12,7 @@ class SingleAlbum extends React.Component {
         <Link
           data-testid={ `link-to-album-${id}` }
           to={ `/album/${id}` }
+          className="album-link"
         >
           Mais informações
         </Link>

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import getMusics from './services/musicsAPI';
 import MusicCard from './components/MusicCard';
 import { getFavoriteSongs } from './services/favoriteSongsAPI';
+import './Album.css';
 
 class Album extends React.Component {
   constructor() {
@@ -63,17 +64,19 @@ class Album extends React.Component {
               <div>
                 <h1 data-testid="artist-name">{ artist }</h1>
                 <h2 data-testid="album-name">{ collection }</h2>
-                {album
-                  .map((song) => (
-                    <MusicCard
-                      key={ song.trackId }
-                      music={ song.previewUrl }
-                      musicName={ song.trackName }
-                      id={ song.trackId }
-                      song={ song }
-                      favorite={ favorites.some((fv) => fv.trackId === song.trackId) }
-                      teste={ () => console.log('Será?') }
-                    />))}
+                <div className="songs">
+                  {album
+                    .map((song) => (
+                      <MusicCard
+                        key={ song.trackId }
+                        music={ song.previewUrl }
+                        musicName={ song.trackName }
+                        id={ song.trackId }
+                        song={ song }
+                        favorite={ favorites.some((fv) => fv.trackId === song.trackId) }
+                        teste={ () => console.log('Será?') }
+                      />))}
+                </div>
               </div>
             )}
       </div>
