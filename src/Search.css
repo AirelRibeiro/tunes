@@ -29,9 +29,9 @@
 
 .album {
   align-items: center;
-  background: linear-gradient(217deg, #ffcbdb, rgba(255, 0, 0, 0) 70.71%)
-    linear-gradient(127deg, rgb(178, 233, 178), rgba(0, 255, 0, 0) 70.71%)
-    linear-gradient(336deg, rgb(196, 196, 245), rgba(0, 0, 255, 0) 70.71%);
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.322), rgba(255, 0, 0, 0) 70.71%)
+    linear-gradient(127deg, rgba(0, 255, 0, 0.301), rgba(0, 255, 0, 0) 70.71%)
+    linear-gradient(336deg, rgba(0, 0, 255, 0.219), rgba(0, 0, 255, 0) 70.71%);
   border-radius: 50%;
   box-shadow: inset 0 0 1em rgba(253, 165, 241, 0.973);
   color: darkslateblue;
