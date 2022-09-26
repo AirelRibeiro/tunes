@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './components/Header';
-import searchAlbumsAPI from './services/searchAlbumsAPI';
+import Header from './Header';
+import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Carregando from './Carregando';
-import SetOfAlbums from './components/SetOfAlbums';
-import './Search.css';
+import SetOfAlbums from './SetOfAlbums';
+import '../style/Search.css';
 
 class Search extends React.Component {
   constructor() {

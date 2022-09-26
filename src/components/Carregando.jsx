@@ -3,7 +3,7 @@ import React from 'react';
 class Carregando extends React.Component {
   render() {
     return (
-      <h3>Carregando...</h3>
+      <h3 className="carregando">Carregando...</h3>
     );
   }
 }

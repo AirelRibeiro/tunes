@@ -6,7 +6,7 @@ class SetOfAlbums extends React.Component {
   render() {
     const { array, artist } = this.props;
     return (
-      array.length <= 0 ? <h1>Nenhum álbum foi encontrado</h1> : (
+      array.length <= 0 ? <h2>Nenhum álbum foi encontrado</h2> : (
         <section>
           <h1>
             Resultado de álbuns de:

@@ -1,0 +1,19 @@
+* {
+  color: #6060A3;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  font-family: cursive;
+  font-size: 1.6em;
+  font-weight: 900;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-bottom: 5vh;
+  margin-top: 8vh;
+}
+
+.name {
+  margin-bottom: 5vh;
+}

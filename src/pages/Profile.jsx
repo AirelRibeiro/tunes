@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Header from './components/Header';
-import Carregando from './Carregando';
-import { getUser } from './services/userAPI';
-import './Profile.css';
+import Header from '../components/Header';
+import Carregando from '../components/Carregando';
+import { getUser } from '../services/userAPI';
+import '../style/Profile.css';
 
 class Profile extends React.Component {
   constructor() {
@@ -29,14 +29,13 @@ class Profile extends React.Component {
   render() {
     const { carregando, user } = this.state;
     return (
-      <div data-testid="page-profile">
+      <div>
         <Header />
         <div>
           {carregando
             ? <Carregando /> : (
-              <div className="profile">
-                <div className="name-img">
-                  <h1>{user.name}</h1>
+              <div className="profile-page">
+                <div className="img">
                   <img
                     src={ user.image }
                     alt={ user.name }

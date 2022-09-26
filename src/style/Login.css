@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+body {
+  background-color: #F3C188;
+
+}
+
+.div_song {
+  display: flex;
+  height: 40vh;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+}
+
+.title {
+  color: #6060A3;
+  font-family: 'Monoton', cursive;
+  font-size: 8em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  margin: auto;
+  text-align: center;
+  width: 60vh;
+}
+
+.login input {
+  background-color: #6060A3;
+  border: none;
+  box-shadow: 2px 2px 5px #68C9EC;
+  border-radius: 5vh;
+  color: #ECFFA1;
+  font-family: cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  height: 5vh;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 2vh;
+  width: 55vh;
+}
+
+.login input::placeholder {
+  color: #ECFFA1;
+}
+
+.login button {
+  background-color: #6060A3;
+  border-radius: 5vh;
+  box-shadow: 2px 2px 5px #68C9EC;
+  color: #ECFFA1;
+  font-family: cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 0;
+  padding: 0.3vh;
+  width: 20vh;
+}

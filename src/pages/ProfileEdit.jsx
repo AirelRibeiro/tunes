@@ -1,10 +1,10 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import Header from './components/Header';
-import Carregando from './Carregando';
-import { getUser, updateUser } from './services/userAPI';
-import UserForm from './UserForm';
-import './Profile.css';
+import Header from '../components/Header';
+import Carregando from '../components/Carregando';
+import { getUser, updateUser } from '../services/userAPI';
+import UserForm from '../components/UserForm';
+import '../style/Profile.css';
 
 class ProfileEdit extends React.Component {
   constructor() {
@@ -104,14 +104,16 @@ class ProfileEdit extends React.Component {
               />
               <h3>Visualização Prévia:</h3>
               <div className="profile">
-                <div className="name-img">
-                  <h1>{ name }</h1>
+                <div className="img">
                   <img
                     src={ image }
                     alt={ name }
                   />
                 </div>
                 <div className="perso-information">
+                  <h3>
+                    {name}
+                  </h3>
                   <h3>
                     Email:
                     {' '}

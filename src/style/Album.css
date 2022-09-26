@@ -1,0 +1,67 @@
+* {
+  text-align: center;
+}
+
+.artist_album_div {
+  color: #68C9EC;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 40%;
+}
+
+.artist_album_div h2 {
+  color: #6060A3;
+}
+
+.songs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+}
+
+.song {
+  background-image: url('https://i.pinimg.com/originals/5f/54/4d/5f544ddb323659d85cba4fb0d811d391.jpg');
+  background-size: cover;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  margin: 1vw auto;
+  padding: 3vh 3vh 1vh 3vh;
+  text-align: center;
+  width: 20vw;
+}
+
+.song audio {
+  border-radius: 30vh;
+  box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+  width: 80%;
+}
+
+label {
+  align-self: start;
+  color: #0a0a55;
+  font-size: 1.5em;
+  font-weight: 900;
+  margin-top: 1vw;
+}
+
+.song div {
+  display: flex;
+  flex-direction: column;
+  height: 12vh;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.song p {
+  align-self: center;
+  border-radius: 25px;
+  color: #0a0a55;
+  font-size: 1.6em;
+  font-weight: 900;
+  height: 6vh;
+  width: 15vw;
+}

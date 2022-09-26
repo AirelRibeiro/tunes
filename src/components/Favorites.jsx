@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from './components/Header';
-import { getFavoriteSongs } from './services/favoriteSongsAPI';
+import Header from './Header';
+import { getFavoriteSongs } from '../services/favoriteSongsAPI';
 import Carregando from './Carregando';
 import FavoritesSongs from './FavoritesSongs';
 
