@@ -1,6 +1,6 @@
 .songs {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: auto;
   width: 90%;
 }

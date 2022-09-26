@@ -50,8 +50,8 @@ class MusicCard extends React.Component {
     const { music, musicName, id, song } = this.props;
     const { check, carregando } = this.state;
     return (
-      <div className="song">
-        <p>{ musicName }</p>
+      <div className="card">
+        <h3>{ musicName }</h3>
         <div>
           <audio src={ music } controls>
             <track kind="captions" />
