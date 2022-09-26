@@ -67,17 +67,28 @@ class Album extends React.Component {
                   <h2>{ `Album: ${collection}` }</h2>
                 </div>
                 <div className="songs">
-                  {album
-                    .map((song) => (
-                      <MusicCard
-                        key={ song.trackId }
-                        music={ song.previewUrl }
-                        musicName={ song.trackName }
-                        id={ song.trackId }
-                        song={ song }
-                        favorite={ favorites.some((fv) => fv.trackId === song.trackId) }
-                        teste={ () => console.log('Será?') }
-                      />))}
+                  <div>
+                    <img
+                      className="album-image"
+                      src={
+                        `${(album[0].artworkUrl100).split('jpg/')[0]}jpg/400x400bb.jpg`
+                      }
+                      alt={ album }
+                    />
+                  </div>
+                  <div>
+                    {album
+                      .map((song) => (
+                        <MusicCard
+                          key={ song.trackId }
+                          music={ song.previewUrl }
+                          musicName={ song.trackName }
+                          id={ song.trackId }
+                          song={ song }
+                          favorite={ favorites.some((fv) => fv.trackId === song.trackId) }
+                          teste={ () => console.log('Será?') }
+                        />))}
+                  </div>
                 </div>
               </div>
             )}
