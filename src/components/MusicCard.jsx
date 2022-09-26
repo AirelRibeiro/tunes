@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { addSong, removeSong } from '../services/favoriteSongsAPI';
-import Carregando from '../Carregando';
+import Carregando from './Carregando';
+import '../style/Album.css';
 
 class MusicCard extends React.Component {
   constructor() {
@@ -52,7 +53,7 @@ class MusicCard extends React.Component {
       <div className="song">
         <p>{ musicName }</p>
         <div>
-          <audio data-testid="audio-component" src={ music } controls>
+          <audio src={ music } controls>
             <track kind="captions" />
             O seu navegador não suporta o elemento
             {' '}
@@ -64,7 +65,6 @@ class MusicCard extends React.Component {
             <input
               id={ id }
               type="checkbox"
-              data-testid={ `checkbox-music-${id}` }
               checked={ check }
               onChange={ (event) => this.handleChange(event, song) }
             />

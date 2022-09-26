@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './components/Header';
-import getMusics from './services/musicsAPI';
-import MusicCard from './components/MusicCard';
-import { getFavoriteSongs } from './services/favoriteSongsAPI';
-import './Album.css';
+import Header from '../components/Header';
+import getMusics from '../services/musicsAPI';
+import MusicCard from '../components/MusicCard';
+import { getFavoriteSongs } from '../services/favoriteSongsAPI';
+import '../style/Album.css';
 
 class Album extends React.Component {
   constructor() {
@@ -57,13 +57,15 @@ class Album extends React.Component {
       favorites,
       favoritePickUp } = this.state;
     return (
-      <div data-testid="page-album">
+      <div>
         <Header />
         {(respondido && !favoritePickUp)
             && (
               <div>
-                <h1 data-testid="artist-name">{ artist }</h1>
-                <h2 data-testid="album-name">{ collection }</h2>
+                <div className="artist_album_div">
+                  <h2>{ `Artista: ${artist}` }</h2>
+                  <h2>{ `Album: ${collection}` }</h2>
+                </div>
                 <div className="songs">
                   {album
                     .map((song) => (

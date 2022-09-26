@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './components/Header';
-import searchAlbumsAPI from './services/searchAlbumsAPI';
+import Header from './Header';
+import searchAlbumsAPI from '../services/searchAlbumsAPI';
 import Carregando from './Carregando';
-import SetOfAlbums from './components/SetOfAlbums';
-import './Search.css';
+import SetOfAlbums from './SetOfAlbums';
+import '../style/Search.css';
 
 class Search extends React.Component {
   constructor() {
@@ -39,15 +39,13 @@ class Search extends React.Component {
   render() {
     const { input, artistName, carregando, artist } = this.state;
     return (
-      <div data-testid="page-search" className="search">
+      <div className="search">
         <Header />
         <input
-          data-testid="search-artist-input"
           value={ input }
           onChange={ this.handleChange }
         />
         <button
-          data-testid="search-artist-button"
           type="button"
           disabled={ input.length < 2 }
           onClick={ () => this.recoverAlbum() }
