@@ -87,7 +87,7 @@ class ProfileEdit extends React.Component {
     const {
       carregando, respondido, button, name, email, description, image } = this.state;
     return (
-      <div data-testid="page-profile-edit">
+      <div>
         <Header />
         {carregando
           ? <Carregando />

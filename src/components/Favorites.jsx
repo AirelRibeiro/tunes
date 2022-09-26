@@ -32,7 +32,7 @@ class Favorites extends React.Component {
   render() {
     const { favorites, favoritePickUp, carregando } = this.state;
     return (
-      <div data-testid="page-favorites">
+      <div>
         <Header />
         {carregando && <Carregando />}
         <div>

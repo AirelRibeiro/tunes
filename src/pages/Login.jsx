@@ -45,16 +45,14 @@ class Login extends React.Component {
           <h1 className="title">Tu-Tu-Tunes</h1>
           <img src={ song } alt="song" />
         </div>
-        <div data-testid="page-login" className="login">
+        <div className="login">
           <input
-            data-testid="login-name-input"
             value={ name }
             onChange={ this.handleChange }
             placeholder="Insira seu nome"
           />
           <button
             type="button"
-            data-testid="login-submit-button"
             disabled={ name.length < tres }
             onClick={ this.funcaoAuxiliar }
           >

@@ -10,7 +10,6 @@ class UserForm extends React.Component {
         <div>
           <input
             type="text"
-            data-testid="edit-input-name"
             name="name"
             value={ name }
             onChange={ changeFunction }
@@ -18,7 +17,6 @@ class UserForm extends React.Component {
           />
           <input
             type="email"
-            data-testid="edit-input-email"
             name="email"
             value={ email }
             onChange={ changeFunction }
@@ -28,7 +26,6 @@ class UserForm extends React.Component {
         <div>
           <input
             type="text"
-            data-testid="edit-input-image"
             name="image"
             value={ image }
             onChange={ changeFunction }
@@ -36,7 +33,6 @@ class UserForm extends React.Component {
           />
           <input
             type="textarea"
-            data-testid="edit-input-description"
             name="description"
             value={ description }
             onChange={ changeFunction }
@@ -45,7 +41,6 @@ class UserForm extends React.Component {
         </div>
         <button
           type="button"
-          data-testid="edit-button-save"
           onClick={ saveFunction }
           disabled={ but }
         >

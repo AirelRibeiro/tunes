@@ -39,7 +39,6 @@ class Profile extends React.Component {
                   <img
                     src={ user.image }
                     alt={ user.name }
-                    data-testid="profile-image"
                   />
                 </div>
                 <div className="perso-information">

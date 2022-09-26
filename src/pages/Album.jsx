@@ -57,14 +57,14 @@ class Album extends React.Component {
       favorites,
       favoritePickUp } = this.state;
     return (
-      <div data-testid="page-album">
+      <div>
         <Header />
         {(respondido && !favoritePickUp)
             && (
               <div>
                 <div className="artist_album_div">
-                  <h2 data-testid="artist-name">{ `Artista: ${artist}` }</h2>
-                  <h2 data-testid="album-name">{ `Album: ${collection}` }</h2>
+                  <h2>{ `Artista: ${artist}` }</h2>
+                  <h2>{ `Album: ${collection}` }</h2>
                 </div>
                 <div className="songs">
                   {album
