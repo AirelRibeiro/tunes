@@ -15,6 +15,16 @@ Tu Tu Tunes foi um projeto desenvolvido durante o módulo de front-end na Trybe,
 - Ver seu perfil na aplicação;
 - E editar seu perfil, estando logado.
 
+## Escolha como prefere ouvir música e clica para acessar o Tu Tu Tunes⏯️:
+
+<a href="https://tunes-40of9wxj3-airelribeiro.vercel.app/" target="_blank"><img height="100" src="https://user-images.githubusercontent.com/98190806/194330793-2e4b2479-ea84-43cd-bde3-51b3a72863d7.png" alt="Radio" />
+</a>
+<a href="https://tunes-40of9wxj3-airelribeiro.vercel.app/" target="_blank"><img height="100" src="https://user-images.githubusercontent.com/98190806/194332277-259c40a4-3a2f-4518-8309-1a494314bb36.png" alt="Radio" />
+</a>
+<a href="https://tunes-40of9wxj3-airelribeiro.vercel.app/" target="_blank"><img height="100" src="https://user-images.githubusercontent.com/98190806/194330982-3ea21652-3134-4b2c-b121-f1e9b7b01911.png" alt="Radio" />
+</a>
+<a href="https://tunes-40of9wxj3-airelribeiro.vercel.app/" target="_blank"><img height="100" src="https://user-images.githubusercontent.com/98190806/194331899-c0e6a2f3-73e9-4532-92a0-b309809af01a.png" alt="Radio" />
+</a>
 
 
 ## Ferramentas utilizadas:
